@@ -3965,11 +3965,12 @@ btn-group-lg .btn {
 }
 
 .owl-buttons div {
-	display: inline-block;
+	/* display: inline-block; */
 	width: 26px;
 	height: 26px;
 	margin-left: 5px;
-	position: static
+	position: static;
+	display:flex;
 }
 
 .owl-controls {
@@ -3980,11 +3981,11 @@ btn-group-lg .btn {
 .owl-controls .owl-page {
 	display: inline-block;
 	zoom: 1;
-	display: inline
+	display: flex
 }
 
 .owl-controls .owl-page span {
-	display: block;
+	display: flex;
 	width: 12px;
 	height: 12px;
 	margin: 5px 7px;
@@ -4298,7 +4299,7 @@ input[type="color"]:focus {
 
 body.login,
 body.error {
-	background: #555 url("/web/20220507123449im_/https://viracore.host/templates/Clouder/assets/images/loginBg.jpg") center center no-repeat fixed;
+	background: #555 url("/images/loginBg.jpg") center center no-repeat fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -4862,7 +4863,7 @@ body.eno .login-box {
 .hero-bg-wrap {
 	position: relative;
 	border-top: 5px solid #ff6c2c;
-	background-image: url(../images/hero-bg1.jpg);
+	background-image: url(/images/hero-bg1.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -4888,7 +4889,7 @@ body.eno .login-box {
 .hero-bg-wrap .bg-shape-poly {
 	padding: 20px 55px 55px 105px;
 	margin-left: -90px;
-	background: url(../images/hero-bg-poly.svg);
+	background: url(/images/hero-bg-poly.svg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	margin-bottom: 30px
@@ -5055,7 +5056,7 @@ body.eno .login-box {
 }
 
 .hero-bg-wrap.style-2 {
-	background-image: url(../images/hero-bg2.jpg)
+	background-image: url(/images/hero-bg2.jpg)
 }
 
 .hero-bg-wrap.top {
@@ -5067,7 +5068,7 @@ body.eno .login-box {
 }
 
 .sec-img-bg {
-	background-image: url(../images/sec-bg1.jpg);
+	background-image: url(/images/sec-bg1.jpg);
 	background-attachment: fixed;
 	background-origin: initial;
 	background-clip: initial;
@@ -5264,7 +5265,8 @@ body.eno .login-box {
 .block-s6.tech-specs ul li:before {
 	content: "\f058";
 	margin-right: 4px;
-	font-family: "Font Awesome 5 Pro";
+	font-family: 'Font Awesome\ 5 Free'; 
+	/* font-family: "Font Awesome 5 Pro"; */
 	color: #009cde;
 	font-size: 15px
 }
@@ -5666,7 +5668,7 @@ body.eno .login-box {
 }
 
 .block-holder-1 {
-	background: url(../images/block-holder1.jpg);
+	background: url(/web/20220723170905im_/https://viracore.host/templates/Clouder/assets/images/block-holder1.jpg);
 	background-attachment: fixed;
 	background-origin: initial;
 	background-clip: initial;
@@ -6727,22 +6729,3 @@ body.eno .login-box {
 	font-size: 5em
 }
 
-/*
-     FILE ARCHIVED ON 12:34:49 May 07, 2022 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 13:28:25 Feb 26, 2024.
-     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-
-     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-     SECTION 108(a)(3)).
-*/
-/*
-playback timings (ms):
-  exclusion.robots: 61.057
-  exclusion.robots.policy: 61.021
-  cdx.remote: 0.338
-  esindex: 0.031
-  LoadShardBlock: 782.034 (6)
-  PetaboxLoader3.resolve: 478.359 (4)
-  PetaboxLoader3.datanode: 299.891 (7)
-  load_resource: 259.827
-*/
