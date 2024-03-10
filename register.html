@@ -388,7 +388,7 @@
 
 
 <div id="registration">
-    <form method="post" class="using-password-strength" action="/web/20220817093357/https://viracore.host/register.php" role="form" name="orderfrm" id="frmCheckout">
+    <form method="post" class="using-password-strength" action="" role="form" name="orderfrm" id="frmCheckout">
 <input type="hidden" name="token" value="fded362102ce030224ce337737dcbafadc6cf4ac"/>
         <input type="hidden" name="register" value="true"/>
 
@@ -479,12 +479,12 @@
                     htmlTarget: "register",
                     targetLogin: "login",
                     targetRegister: "register",
-                    redirectUrl: "%2Fclientarea.php"
+                    redirectUrl: ""
                 };
 
                 if (response.status === 'connected') {
                     var config = {
-                        url: "/index.php?rp=/auth/provider/facebook_signin/finalize",
+                        url: "",
                         method: "POST",
                         dataType: "json",
                         data: {
