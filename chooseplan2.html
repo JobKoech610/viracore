@@ -1538,187 +1538,12 @@
                 <div id="DomainSearchResults" class="w-hidden">
 
                     <div id="searchDomainInfo">
-                        <p id="primaryLookupSearching" class="domain-lookup-loader domain-lookup-primary-loader domain-searching domain-checker-result-headline">
-                            <i class="fas fa-spinner fa-spin"></i>
-                            <span class="domain-lookup-register-loader">Checking availability...</span>
-                            <span class="domain-lookup-transfer-loader">Verifying transfer eligibility...</span>
-                            <span class="domain-lookup-other-loader">Verifying your domain selection...</span>
-                        </p>
+                        
                         <div id="primaryLookupResult" class="domain-lookup-result domain-lookup-primary-results w-hidden">
-                            <div class="domain-unavailable domain-checker-unavailable headline"><strong>:domain</strong> is unavailable</div>
+ 
                             <div class="domain-available domain-checker-available headline">Congratulations! <strong></strong> is available!</div>
                             <div class="btn btn-primary domain-contact-support headline">Contact Us</div>
-                            <div class="transfer-eligible">
-                                <p class="domain-checker-available headline">Your domain is eligible for transfer</p>
-                                <p>Please ensure you have unlocked your domain at your current registrar before continuing.</p>
-                            </div>
-                            <div class="transfer-not-eligible">
-                                <p class="domain-checker-unavailable headline">Not Eligible for Transfer</p>
-                                <p>The domain you entered does not appear to be registered.</p>
-                                <p>If the domain was registered recently, you may need to try again later.</p>
-                                <p>Alternatively, you can perform a search to register this domain.</p>
-                            </div>
-                            <div class="domain-invalid">
-                                <p class="domain-checker-unavailable headline">Invalid domain name provided</p>
-                                <p>
-                                    Domains must begin with a letter or a number<span class="domain-length-restrictions"> and be between <span class="min-length"></span> and <span class="max-length"></span> characters in length</span><br/>
-                                    Please check your entry and try again.
-                                </p>
-                            </div>
-                            <div id="idnLanguageSelector" class="margin-10 idn-language-selector idn-language w-hidden">
-                                <div class="row">
-                                    <div class="col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2 offset-sm-1 offset-lg-2">
-                                        <div class="margin-10 text-center">
-                                            We detected the domain you entered is an international domain name. In order to continue, please select your desired domain language.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-8 col-lg-6 col-sm-offset-2 col-lg-offset-3 offset-sm-2 offset-lg-3">
-                                        <div class="form-group">
-                                            <select name="idnlanguage" class="form-control">
-                                                <option value="">Choose IDN Language</option>
-                                                                                                    <option value="afr">Afrikaans</option>
-                                                                                                    <option value="alb">Albanian</option>
-                                                                                                    <option value="ara">Arabic</option>
-                                                                                                    <option value="arg">Aragonese</option>
-                                                                                                    <option value="arm">Armenian</option>
-                                                                                                    <option value="asm">Assamese</option>
-                                                                                                    <option value="ast">Asturian</option>
-                                                                                                    <option value="ave">Avestan</option>
-                                                                                                    <option value="awa">Awadhi</option>
-                                                                                                    <option value="aze">Azerbaijani</option>
-                                                                                                    <option value="ban">Balinese</option>
-                                                                                                    <option value="bal">Baluchi</option>
-                                                                                                    <option value="bas">Basa</option>
-                                                                                                    <option value="bak">Bashkir</option>
-                                                                                                    <option value="baq">Basque</option>
-                                                                                                    <option value="bel">Belarusian</option>
-                                                                                                    <option value="ben">Bengali</option>
-                                                                                                    <option value="bho">Bhojpuri</option>
-                                                                                                    <option value="bos">Bosnian</option>
-                                                                                                    <option value="bul">Bulgarian</option>
-                                                                                                    <option value="bur">Burmese</option>
-                                                                                                    <option value="car">Carib</option>
-                                                                                                    <option value="cat">Catalan</option>
-                                                                                                    <option value="che">Chechen</option>
-                                                                                                    <option value="chi">Chinese</option>
-                                                                                                    <option value="chv">Chuvash</option>
-                                                                                                    <option value="cop">Coptic</option>
-                                                                                                    <option value="cos">Corsican</option>
-                                                                                                    <option value="scr">Croatian</option>
-                                                                                                    <option value="cze">Czech</option>
-                                                                                                    <option value="dan">Danish</option>
-                                                                                                    <option value="div">Divehi</option>
-                                                                                                    <option value="doi">Dogri</option>
-                                                                                                    <option value="dut">Dutch</option>
-                                                                                                    <option value="eng">English</option>
-                                                                                                    <option value="est">Estonian</option>
-                                                                                                    <option value="fao">Faroese</option>
-                                                                                                    <option value="fij">Fijian</option>
-                                                                                                    <option value="fin">Finnish</option>
-                                                                                                    <option value="fre">French</option>
-                                                                                                    <option value="fry">Frisian</option>
-                                                                                                    <option value="gla">Gaelic; Scottish Gaelic</option>
-                                                                                                    <option value="geo">Georgian</option>
-                                                                                                    <option value="ger">German</option>
-                                                                                                    <option value="gon">Gondi</option>
-                                                                                                    <option value="gre">Greek</option>
-                                                                                                    <option value="guj">Gujarati</option>
-                                                                                                    <option value="heb">Hebrew</option>
-                                                                                                    <option value="hin">Hindi</option>
-                                                                                                    <option value="hun">Hungarian</option>
-                                                                                                    <option value="ice">Icelandic</option>
-                                                                                                    <option value="inc">Indic</option>
-                                                                                                    <option value="ind">Indonesian</option>
-                                                                                                    <option value="inh">Ingush</option>
-                                                                                                    <option value="gle">Irish</option>
-                                                                                                    <option value="ita">Italian</option>
-                                                                                                    <option value="jpn">Japanese</option>
-                                                                                                    <option value="jav">Javanese</option>
-                                                                                                    <option value="kas">Kashmiri</option>
-                                                                                                    <option value="kaz">Kazakh</option>
-                                                                                                    <option value="khm">Khmer</option>
-                                                                                                    <option value="kir">Kirghiz</option>
-                                                                                                    <option value="kor">Korean</option>
-                                                                                                    <option value="kur">Kurdish</option>
-                                                                                                    <option value="lao">Lao</option>
-                                                                                                    <option value="lat">Latin</option>
-                                                                                                    <option value="lav">Latvian</option>
-                                                                                                    <option value="lit">Lithuanian</option>
-                                                                                                    <option value="ltz">Luxembourgish</option>
-                                                                                                    <option value="mac">Macedonian</option>
-                                                                                                    <option value="may">Malay</option>
-                                                                                                    <option value="mal">Malayalam</option>
-                                                                                                    <option value="mlt">Maltese</option>
-                                                                                                    <option value="mao">Maori</option>
-                                                                                                    <option value="mol">Moldavian</option>
-                                                                                                    <option value="mon">Mongolian</option>
-                                                                                                    <option value="nep">Nepali</option>
-                                                                                                    <option value="nor">Norwegian</option>
-                                                                                                    <option value="ori">Oriya</option>
-                                                                                                    <option value="oss">Ossetian</option>
-                                                                                                    <option value="per">Persian</option>
-                                                                                                    <option value="pol">Polish</option>
-                                                                                                    <option value="por">Portuguese</option>
-                                                                                                    <option value="pan">Punjabi</option>
-                                                                                                    <option value="pus">Pushto</option>
-                                                                                                    <option value="raj">Rajasthani</option>
-                                                                                                    <option value="rum">Romanian</option>
-                                                                                                    <option value="rus">Russian</option>
-                                                                                                    <option value="smo">Samoan</option>
-                                                                                                    <option value="san">Sanskrit</option>
-                                                                                                    <option value="srd">Sardinian</option>
-                                                                                                    <option value="scc">Serbian</option>
-                                                                                                    <option value="snd">Sindhi</option>
-                                                                                                    <option value="sin">Sinhalese</option>
-                                                                                                    <option value="slo">Slovak</option>
-                                                                                                    <option value="slv">Slovenian</option>
-                                                                                                    <option value="som">Somali</option>
-                                                                                                    <option value="spa">Spanish</option>
-                                                                                                    <option value="swa">Swahili</option>
-                                                                                                    <option value="swe">Swedish</option>
-                                                                                                    <option value="syr">Syriac</option>
-                                                                                                    <option value="tgk">Tajik</option>
-                                                                                                    <option value="tam">Tamil</option>
-                                                                                                    <option value="tel">Telugu</option>
-                                                                                                    <option value="tha">Thai</option>
-                                                                                                    <option value="tib">Tibetan</option>
-                                                                                                    <option value="tur">Turkish</option>
-                                                                                                    <option value="ukr">Ukrainian</option>
-                                                                                                    <option value="urd">Urdu</option>
-                                                                                                    <option value="uzb">Uzbek</option>
-                                                                                                    <option value="vie">Vietnamese</option>
-                                                                                                    <option value="wel">Welsh</option>
-                                                                                                    <option value="yid">Yiddish</option>
-                                                                                            </select>
-                                            <div class="field-error-msg">
-                                                Please select the language of the domain you wish to register.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="domain-price">
-                                <span class="register-price-label">Continue to register this domain for</span>
-                                <span class="transfer-price-label w-hidden">Transfer to us and extend by 1 year* for</span>
-                                <span class="price"></span>
-                            </div>
-                            <p class="domain-error domain-checker-unavailable headline"></p>
-                            <input type="hidden" id="resultDomainOption" name="domainoption"/>
-                            <input type="hidden" id="resultDomain" name="domains[]"/>
-                            <input type="hidden" id="resultDomainPricingTerm"/>
-                        </div>
-                    </div>
-
-                                            
-                        <div class="suggested-domains w-hidden">
-                            <div class="panel-heading card-header">
-                                Suggested Domains
-                            </div>
-                            <div id="suggestionsLoader" class="card-body panel-body domain-lookup-loader domain-lookup-suggestions-loader">
-                                <i class="fas fa-spinner fa-spin"></i> Generating suggestions for you
-                            </div>
+                            
                             <div id="domainSuggestions" class="domain-lookup-result list-group w-hidden">
                                 <div class="domain-suggestion list-group-item w-hidden">
                                     <span class="domain"></span><span class="extension"></span>
@@ -1726,7 +1551,7 @@
                                         <button type="button" class="btn btn-add-to-cart product-domain" data-whois="1" data-domain="">
                                             <span class="to-add">Add to Cart</span>
                                             <span class="loading">
-                                                <i class="fas fa-spinner fa-spin"></i> Loading...
+                                                <i class=""></i> Loading...
                                             </span>
                                             <span class="added">Added</span>
                                             <span class="unavailable">Taken</span>
