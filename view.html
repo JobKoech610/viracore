@@ -73,8 +73,8 @@
 	<link rel="shortcut icon" href="images/favicon152.png">
 	<link rel="shortcut icon" href="images/favicon180.png">
 	
-	<script type="text/javascript">
-		var csrfToken = '23c1bec6d35bf6eb77a04df581ef1f098ee132fa',
+	<!-- <script type="text/javascript">
+		var csrf = '23c1bec6d35bf6eb77a04df581ef1f098ee132fa',
 			markdownGuide = 'Markdown Guide',
 			locale = 'en',
 			saved = 'saved',
@@ -82,7 +82,7 @@
 			whmcsBaseUrl = "",
 			requiredText = 'Required',
 			recaptchaSiteKey = "6LdzXjsfAAAAAP2ZnnADnh_Vb-9rK1K8HcwZ14uQ";
-	</script>
+	</script> -->
 	
 	<script src="js/scripts.min.js"></script>
 	
@@ -464,9 +464,9 @@
         </div>
 
                     <div class="panel-body card-body collapsable-card-body">
-                <form method="post" action="">
-<input type="hidden" name="token" value="03cdbaf3f7e5f08efaed4704ed36c74c0789a427"/>
-    <select name="currency" onchange="submit()" class="form-control"><option value="1" selected>USD</option><option value="2">BDT</option>    </select>
+                <form  action="">
+<input type="hidden" name=""/>
+    <select name="currency" onchange="" class="form-control"><option value="1" selected>USD</option><option value="2">BDT</option>    </select>
 </form>
             </div>
         
@@ -576,9 +576,9 @@
             </div>
     
             <div class="pull-right form-inline float-right">
-            <form method="post" action="">
-<input type="hidden" name="token" value="03cdbaf3f7e5f08efaed4704ed36c74c0789a427"/>
-                <select name="currency" onchange="submit()" class="form-control">
+            <form  action="">
+<input type="hidden" name=""/>
+                <select name="currency" onchange="" class="form-control">
                     <option value="">Choose Currency</option>
                                             <option value="1" selected>USD</option>
                                             <option value="2">BDT</option>
@@ -593,8 +593,8 @@
 
                         
                         
-                        <form method="post" action="">
-<input type="hidden" name="token" value="03cdbaf3f7e5f08efaed4704ed36c74c0789a427"/>
+                        <form  action="">
+<input type="hidden" name=""/>
 
                             <div class="view-cart-items-header">
                                 <div class="row">
@@ -634,23 +634,30 @@
                                                             </ul>
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active promo" id="applyPromo">
-                                                                            <form method="post" action="">
-<input type="hidden" name="token" value="03cdbaf3f7e5f08efaed4704ed36c74c0789a427"/>
-                                            <div class="form-group prepend-icon ">
-                                                <label for="cardno" class="field-icon">
-                                                    <i class="fas fa-ticket-alt"></i>
-                                                </label>
-                                                <input type="text" name="promocode" id="inputPromotionCode" class="field form-control" placeholder="Enter promo code if you have one" required="required">
-                                            </div>
-                                            <button type="submit" name="validatepromo" class="btn btn-block btn-default" value="Validate Code">
-                                                Validate Code
-                                            </button>
-                                        </form>
+                                    <form id="promoForm" action="">
+                                        <input type="hidden" name=""/>
+                                        <div class="form-group prepend-icon">
+                                            <label for="cardno" class="field-icon">
+                                                <i class="fas fa-ticket-alt"></i>
+                                            </label>
+                                            <input type="text" id="inputPromotionCode" class="field form-control" placeholder="Enter promo code if you have one" required="required">
+                                        </div>
+                                        <button class="btn btn-block btn-default" id="validateBtn">
+                                            Validate Code
+                                        </button>
+                                    </form>
+                                    
+                                    <script>
+                                        document.getElementById("validateBtn").addEventListener("click", function(event) {
+                                            event.preventDefault(); // Prevent default button click behavior
+                                            // Add your validation logic here if needed
+                                        });
+                                    </script>
                                                                     </div>
                                 <div role="tabpanel" class="tab-pane" id="calcTaxes">
 
-                                    <form method="post" action="">
-<input type="hidden" name="token" value="03cdbaf3f7e5f08efaed4704ed36c74c0789a427"/>
+                                    <form  action="">
+<input type="hidden" name=""/>
                                         <div class="form-group row">
                                             <label for="inputState" class="pt-sm-2 col-sm-4 control-label text-sm-right">State</label>
                                             <div class="col-sm-7">
@@ -1409,7 +1416,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group text-center">
-                                            <button type="submit" class="btn btn-default">
+                                            <button  class="btn btn-default">
                                                 Update Totals
                                             </button>
                                         </div>
@@ -1482,8 +1489,8 @@
             </div>
         </div>
 
-        <form method="post" action="">
-<input type="hidden" name="token" value="03cdbaf3f7e5f08efaed4704ed36c74c0789a427"/>
+        <form  action="">
+<input type="hidden" name=""/>
             <input type="hidden" name="a" value="remove"/>
             <input type="hidden" name="r" value="" id="inputRemoveItemType"/>
             <input type="hidden" name="i" value="" id="inputRemoveItemRef"/>
@@ -1504,15 +1511,15 @@
                         </div>
                         <div class="modal-footer justify-content-center">
                             <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-                            <button type="submit" class="btn btn-primary">Yes</button>
+                            <button  class="btn btn-primary">Yes</button>
                         </div>
                     </div>
                 </div>
             </div>
         </form>
 
-        <form method="post" action="">
-<input type="hidden" name="token" value="03cdbaf3f7e5f08efaed4704ed36c74c0789a427"/>
+        <form  action="">
+<input type="hidden" name=""/>
             <input type="hidden" name="a" value="empty"/>
             <div class="modal fade modal-remove-item" id="modalEmptyCart" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
@@ -1531,7 +1538,7 @@
                         </div>
                         <div class="modal-footer justify-content-center">
                             <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
-                            <button type="submit" class="btn btn-primary">Yes</button>
+                            <button  class="btn btn-primary">Yes</button>
                         </div>
                     </div>
                 </div>
@@ -1857,7 +1864,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-4">
-                            <button type="submit" class="btn btn-default btn-sm">
+                            <button  class="btn btn-default btn-sm">
                                 <i class="fas fa-plus fa-fw"></i>
                                 Generate new password
                             </button>
